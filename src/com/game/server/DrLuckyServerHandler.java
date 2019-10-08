@@ -38,23 +38,16 @@ public class DrLuckyServerHandler extends SimpleChannelInboundHandler<String> {
 
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, String msg){
         System.out.println("User has said something: " + msg);
         //Loop through all connected channels
-        if(currentPlayer != null){
-            if(currentPlayer == ctx.channel()){ //Make sure that the player who has command is the current player
-                if(connectedPlayers.size() > 1){ //More than or = 2 players
-                    for (Channel c: channels) {
-                        if (c != ctx.channel()) { //send to all other channels that isnt the one who sent the message
-                            c.writeAndFlush("[" + ctx.channel().remoteAddress() + "] " + msg + '\n');
-                        } else {
-                            //If its the channel that sent the message.
-                            c.writeAndFlush("[you] " + msg + '\n');
-                        }
-                    }
-                }
+        for (Channel c: channels) {
+            if (c != ctx.channel()) { //send to all other channels that isnt the one who sent the message
+                c.writeAndFlush("[" + ctx.channel().remoteAddress() + "] " + msg + '\n');
+            } else {
+                //If its the channel that sent the message.
+                c.writeAndFlush("[you] " + msg + '\n');
             }
         }
-
     }
 }
