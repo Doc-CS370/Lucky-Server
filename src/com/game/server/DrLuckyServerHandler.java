@@ -50,11 +50,15 @@ public class DrLuckyServerHandler extends SimpleChannelInboundHandler<String> {
                     connectedPlayers.add(ctx.channel());
                     channels.add(ctx.channel());
                     if(channels.size() > 1){
+                        ctx.writeAndFlush("currentplayers");
                         for(Channel ch: channels){
                             if(ch != ctx.channel()){
-                                ch.writeAndFlush("newplayer");
+                                ch.writeAndFlush("newplayer\n");
+                                ctx.writeAndFlush(playerPositions.get(ch) + "\n");
                             }
+
                         }
+
                     }
                 });
     }
