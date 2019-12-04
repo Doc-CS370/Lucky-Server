@@ -30,6 +30,7 @@ public class DrLuckyServerHandler extends SimpleChannelInboundHandler<String> {
     static int desiredPlayers = 0;
     static Channel currentPlayer = null;
     static Map<Channel, Player> playerObjects;
+    static Player drLucky;
     static ArrayList<Player> players; //Would be bots
     static int currentTurn = 0;
     static boolean gameHasStarted = false;
@@ -61,28 +62,22 @@ public class DrLuckyServerHandler extends SimpleChannelInboundHandler<String> {
 
                     if(currentPlayer == null){ //Check if its the first player
                         currentPlayer = ctx.channel();
+                        System.out.println("Player has been chosen");
                     }
 
-                    connectedPlayers.add(ctx.channel());
-                    channels.add(ctx.channel());
+                    //connectedPlayers.add(ctx.channel());
+                    //channels.add(ctx.channel());
 
-                    Player playerToAdd = new Player();
+                    //Player playerToAdd = new Player();
                     //playerToAdd.addCard(deck.get()); //Implement
-                    playerObjects.put(ctx.channel(), playerToAdd);
-                    players.add(playerToAdd);
+                    //playerObjects.put(ctx.channel(), playerToAdd);
+                    //players.add(playerToAdd);
 
                     if(channels.size() > 1){
-                        ctx.writeAndFlush("currentplayers\n");
-                        for(Channel ch: channels){
-                            if(ch != ctx.channel()){
-                                ch.writeAndFlush("newplayer\n"); //Sends a new player flag to players in game
-                                ctx.writeAndFlush(playerObjects.get(ch).playerLocation + "\n"); //Sends positions to newly joined player
-                            }
-
-                        }
 
                     } else {
-                        ctx.writeAndFlush("Hello!\nHow many players in this game?\n");
+                        ctx.writeAndFlush("chat Hello, and welcome to Kill Dr. Lucky!!\r\n");
+                        ctx.writeAndFlush("chat How many players in this game?\n");
                     }
 
                 });
@@ -110,6 +105,9 @@ public class DrLuckyServerHandler extends SimpleChannelInboundHandler<String> {
         if(!gameHasStarted){ //Handle when game has not started
             if(isCurrentPlayer(ctx.channel())){ //Make sure its the current player
                 desiredPlayers = Integer.parseInt(msg); //First message should be first player saying how many players they want.
+                ctx.writeAndFlush("chat Total players has been set to: " + desiredPlayers + "\r\n");
+                System.out.println("Total players has been set to: " + desiredPlayers);
+                initiateGame();
             }
         }
         if(gameHasStarted){ //Make sure game has started
@@ -166,6 +164,16 @@ public class DrLuckyServerHandler extends SimpleChannelInboundHandler<String> {
 
     public boolean canGameStart(){
         return connectedPlayers.size() != 0 && connectedPlayers.size() == desiredPlayers;
+    }
+
+    public void initiateGame(){
+        int randomRoom = (int) (Math.random() * 20);
+        drLucky = new Player();
+        drLucky.setAlive();
+        drLucky.setName("Dr. Lucky");
+        drLucky.setLocation(randomRoom);
+        drLucky.print();
+        currentPlayer.writeAndFlush("lucky " + randomRoom);
     }
 
     public void endTurn(){ //Cycle to the next player if the current player has issued the command
