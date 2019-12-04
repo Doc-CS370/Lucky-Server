@@ -1,0 +1,582 @@
+1
+1
+1
+0
+0
+The burden of wasted life weighs heavy on your brow. You miss.
+2
+1
+1
+0
+0
+While sneaking up on the doctor, you are overcome by the urge to sing.
+3
+1
+1
+0
+0
+You are frozen in place by the garish melody of a passing ice cream truck.
+4
+1
+1
+0
+0
+What you thought was a weapon was only a banana. You abandon the peel.
+5
+1
+1
+0
+0
+Doctor Lucky's cat howls. You hate it more than him. The moment passes.
+6
+1
+1
+0
+0
+Your thoughts turn to a misspent youth.
+7
+1
+1
+0
+0
+"This tastes like rat poison! I love rat poison!"
+8
+1
+1
+0
+0
+Creaking floorboards. The trickery of shadows. Fate conspires against you. 
+9
+1
+1
+0
+0
+A hint of regret stays your hand. It won't last. 
+10
+1
+1
+0
+0
+Suddenly you find yourself unable to recall whether a straight beats a flush.
+11
+1
+1
+0
+0
+You question your freshness. 
+12
+1
+1
+0
+0
+A door frame hits you squarely on the head. The Doctor moves on. 
+13
+1
+1
+0
+0
+Doctor Lucky pauses to examine his own thumbs. You are thrown off guard. 
+14
+1
+1
+0
+0
+The Doctor disappears from you path, ducking randomly here and there. 
+15
+1
+1
+0
+0
+A sense of dread inhibits your every physical act. 
+16
+1
+1
+0
+0
+An allergy to dust mites get the better of you. 
+17
+1
+1
+0
+0
+Your cares melt away as distant strains of Mozart drift through the mansion. 
+18
+1
+1
+0
+0
+You are stupid, stupid, stupid. 
+19
+1
+1
+0
+0
+A drip of water, is it rain? Another, and you slip. Falling on your nose. 
+20
+1
+1
+0
+0
+The Doctor turns to you, waxing rhapsodic on his recent polar adventure. 
+21
+1
+1
+0
+0
+In the darkness, a shadow. Another guest? You pause. The Doctor is gone. 
+22
+1
+1
+0
+0
+The Doctor turns to you and asks for the time. You are distracted. 
+23
+1
+1
+0
+0
+You are frozen in place by the garish melody of a passing ice cream truck. 
+24
+1
+1
+0
+0
+Suddenly, a pause, a thought, a shudder. Did you leave the iron on? 
+25
+1
+1
+0
+0
+You slip on an out-of-place banana peel, hurtling hilariously through the air. 
+26
+1
+1
+0
+0
+Doctor Lucky's jacket conceals a well-placed deck of playing cards. 
+27
+1
+1
+0
+0
+Chattering mice distract you momentarily from your chosen course.
+28
+1
+2
+0
+0
+Your attack passes through the Doctor as if he were not even there.
+29
+1
+2
+0
+0
+For a moment you believe yourself to be someone else. It is alarming.
+30
+1
+2
+0
+0
+Without warning, the Doctor begins to spin. It drives you to distraction. 
+31
+1
+2
+0
+0
+You are caught on a piece of furniture and unable to free yourself for minutes. 
+32
+1
+2
+0
+0
+Your feet stick to the floor. The Doctor escapes. 
+33
+1
+2
+0
+0
+You have somehow mistaken your child's toy for Doctor Lucky. 
+34
+1
+2
+0
+0
+You cannot think over the sound of a passing train that no one else can hear. 
+35
+1
+2
+0
+0
+The Doctor inexplicably vanishes in a cloud of feathers. 
+36
+1
+2
+0
+0
+Loose ceiling tiles crash to the floor as you approach the Doctor. He escapes. 
+37
+1
+2
+0
+0
+A flock of bats engulfs your head. You are powerless to evade them. 
+38
+1
+2
+0
+0
+You forget. 
+39
+1
+2
+0
+0
+The Doctor speaks to you about a subject than on reflection makes no sense. 
+40
+1
+3
+0
+0
+A wizened kung-Fu master intervenes on the Doctors behalf, then vanishes. 
+41
+1
+3
+0
+0
+The Doctor wheels around and accidently hits you in the head with a shovel. 
+42
+1
+3
+0
+0
+As you approach the Doctor, you tumble through a trap door. 
+43
+1
+3
+0
+0
+You are overcome with a sense of affection for the old man. It passes. 
+44
+2
+1
+1
+0
+Bare Hands
+45
+2
+2
+7
+9
+Shoehorn
+46
+2
+2
+8
+26
+Piece of Rope
+47
+2
+2
+2
+0
+Tight Hat
+48
+2
+2
+6
+18
+Loud Noise
+49
+2
+2
+8
+20
+Monkey Hand
+50
+2
+2
+5
+6
+Rat Poison
+51
+2
+2
+5
+2
+Billiard Cue
+52
+2
+2
+7
+16
+Broomstick
+53
+2
+2
+5
+13
+Letter Opener
+54
+2
+2
+6
+22
+Trowel
+55
+2
+2
+5
+4
+Bad Cream
+56
+2
+3
+3
+0
+Killing Joke
+57
+2
+3
+3
+0
+Revolver
+58
+2
+3
+5
+12
+Civil War Cannon
+59
+2
+3
+4
+8
+Crepe Pan
+60
+2
+3
+3
+0
+Silken Chord
+61
+2
+3
+4
+5
+Duck Decoy
+62
+2
+4
+4
+0
+Big Red Hammer
+63
+2
+4
+4
+0
+Coping Saw
+64
+3
+1
+0
+0
+Move
+65
+3
+1
+0
+0
+Move
+66
+3
+1
+0
+0
+Move
+67
+3
+1
+0
+0
+Move
+68
+3
+1
+0
+0
+Move
+69
+3
+1
+0
+0
+Move
+70
+3
+1
+0
+0
+Move
+71
+3
+1
+0
+0
+Move
+72
+3
+1
+0
+0
+Move
+73
+3
+1
+0
+0
+Move
+74
+3
+2
+0
+0
+Move
+75
+3
+2
+0
+0
+Move
+76
+3
+3
+0
+0
+Move
+77
+3
+3
+0
+0
+Move
+78
+4
+0
+0
+1
+Parlor
+79
+4
+0
+0
+2
+Billiard Room
+80
+4
+0
+0
+3
+Dining Hall
+81
+4
+0
+0
+4
+Sitting Room
+82
+4
+0
+0
+5
+Trophy Room
+83
+4
+0
+0
+6
+Greenhouse
+84
+4
+0
+0
+7
+Winter Garden
+85
+4
+0
+0
+8
+Kitchen
+86
+4
+0
+0
+10
+Master Suite
+87
+4
+0
+0
+11
+Nursery
+88
+4
+0
+0
+12
+Armory
+89
+4
+0
+0
+13
+Library
+90
+4
+0
+0
+15
+Lilac Room
+91
+4
+0
+0
+17
+Hedge Maze
+92
+4
+0
+0
+18
+Carriage House
+93
+4
+0
+0
+19
+Piazza
+94
+4
+0
+0
+22
+Wine Cellar
+95
+4
+0
+0
+26
+Gallery
+96
+4
+0
+0
+31
+White Room
+97
+4
+0
+0
+20
+Foyer

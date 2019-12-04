@@ -10,6 +10,9 @@ import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class DrLuckyServer {
     static final int PORT = 9000;
 
@@ -20,7 +23,9 @@ public class DrLuckyServer {
         SelfSignedCertificate ssc = new SelfSignedCertificate();
         SslContext sslCtx = SslContextBuilder.forServer(ssc.certificate(), ssc.privateKey())
                 .build();
-
+        DrLuckyServerHandler.deck = CardLoad.compiledeck();
+        DrLuckyServerHandler.deckToReference = CardLoad.compiledeck();
+        DrLuckyServerHandler.rooms = LoadRoom.compileMansion();
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(parentGroup, childGroup)
